@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExampleCell" id="YrG-n3-lce" customClass="ExampleCardCell" customModule="Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="431"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="431"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmf-o3-cQO">
+                        <rect key="frame" x="0.0" y="371" width="339" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go To Next Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pi5-LQ-dHH">
+                                <rect key="frame" x="112" y="19.5" width="115.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.239346683" green="0.27860799429999999" blue="0.58826416729999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Pi5-LQ-dHH" firstAttribute="centerY" secondItem="pmf-o3-cQO" secondAttribute="centerY" id="N0q-8r-41D"/>
+                            <constraint firstItem="Pi5-LQ-dHH" firstAttribute="centerX" secondItem="pmf-o3-cQO" secondAttribute="centerX" id="Q7q-Xg-fnz"/>
+                            <constraint firstAttribute="height" constant="60" id="wod-1Z-Wke"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-tE-3bR">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show info Here When Card is SwipedAway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6L-0k-N8c">
+                                <rect key="frame" x="24.5" y="19.5" width="290.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.094117647058823528" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="w6L-0k-N8c" firstAttribute="centerY" secondItem="T6C-tE-3bR" secondAttribute="centerY" id="TvL-3Y-aBK"/>
+                            <constraint firstAttribute="height" constant="60" id="VRf-Na-mbl"/>
+                            <constraint firstItem="w6L-0k-N8c" firstAttribute="centerX" secondItem="T6C-tE-3bR" secondAttribute="centerX" id="tza-Jc-8zg"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Detailed Info Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSp-rh-9pp">
+                        <rect key="frame" x="75" y="203.5" width="189" height="24"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hur-jY-jUf"/>
+            <color key="backgroundColor" red="0.10236667839999999" green="0.10895542060000001" blue="0.15686830879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pmf-o3-cQO" secondAttribute="trailing" id="2OM-Fe-hH5"/>
+                <constraint firstItem="ZSp-rh-9pp" firstAttribute="centerY" secondItem="YrG-n3-lce" secondAttribute="centerY" id="71U-en-UwK"/>
+                <constraint firstItem="T6C-tE-3bR" firstAttribute="top" secondItem="YrG-n3-lce" secondAttribute="top" id="BXB-Zv-lGv"/>
+                <constraint firstItem="pmf-o3-cQO" firstAttribute="leading" secondItem="YrG-n3-lce" secondAttribute="leading" id="VK7-sN-wVA"/>
+                <constraint firstItem="T6C-tE-3bR" firstAttribute="leading" secondItem="YrG-n3-lce" secondAttribute="leading" id="alu-ga-wXc"/>
+                <constraint firstItem="ZSp-rh-9pp" firstAttribute="centerX" secondItem="YrG-n3-lce" secondAttribute="centerX" id="hRN-Jn-m0Q"/>
+                <constraint firstAttribute="trailing" secondItem="T6C-tE-3bR" secondAttribute="trailing" id="mCU-oI-nsW"/>
+                <constraint firstAttribute="bottom" secondItem="pmf-o3-cQO" secondAttribute="bottom" id="trr-Fa-eqG"/>
+            </constraints>
+            <size key="customSize" width="339" height="431"/>
+            <connections>
+                <outlet property="bottomButtonView" destination="pmf-o3-cQO" id="Upb-qs-TcW"/>
+                <outlet property="buttonViewTitle" destination="Pi5-LQ-dHH" id="Jgg-3Z-az5"/>
+                <outlet property="topView" destination="T6C-tE-3bR" id="k8l-VV-aA9"/>
+            </connections>
+            <point key="canvasLocation" x="37.600000000000001" y="138.98050974512745"/>
+        </collectionViewCell>
+    </objects>
+</document>
