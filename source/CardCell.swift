@@ -3,7 +3,7 @@ import UIKit
 /**
  The CardCell that the user can swipe away. Based on `UICollectionViewCell`.
  
- The cells will be recycled by the `VerticalCardSwiper`,
+ The cells will be recycled by the `StackCard`,
  so don't forget to override `prepareForReuse` when needed.
  */
 @objc open class CardCell: UICollectionViewCell {
@@ -39,7 +39,7 @@ import UIKit
     }
 
     /**
-     Resets the CardCell back to the center of the VerticalCardSwiperView.
+     Resets the CardCell back to the center of the StackCardView.
      */
     public func resetToCenterPosition() {
 

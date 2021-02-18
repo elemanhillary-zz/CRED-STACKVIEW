@@ -1,7 +1,7 @@
 import UIKit
 
 /// Custom `UICollectionViewFlowLayout` that provides the flowlayout information like paging and `CardCell` movements.
-internal class VerticalCardSwiperFlowLayout: UICollectionViewFlowLayout {
+internal class StackCardFlowLayout: UICollectionViewFlowLayout {
 
     /// This property sets the amount of scaling for the first item.
     internal var firstItemTransform: CGFloat?
@@ -20,7 +20,7 @@ internal class VerticalCardSwiperFlowLayout: UICollectionViewFlowLayout {
         super.prepare()
 
         assert(collectionView?.numberOfSections == 1, "Number of sections should always be 1.")
-        assert(collectionView?.isPagingEnabled == false, "Paging on the collectionview itself should never be enabled. To enable cell paging, use the isPagingEnabled property of the VerticalCardSwiperFlowLayout instead.")
+        assert(collectionView?.isPagingEnabled == false, "Paging on the collectionview itself should never be enabled. To enable cell paging, use the isPagingEnabled property of the StackCardFlowLayout instead.")
     }
 
     internal override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

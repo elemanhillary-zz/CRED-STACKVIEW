@@ -1,8 +1,8 @@
 import Foundation
 import UIKit
 
-/// This delegate is used for delegating `VerticalCardSwiper` actions.
-@objc public protocol VerticalCardSwiperDelegate: class {
+/// This delegate is used for delegating `StackCard` actions.
+@objc public protocol StackCardDelegate: class {
 
     /**
      Called right before a CardCell animates off screen. At this point there's already no way back.
@@ -40,29 +40,29 @@ import UIKit
 
     /**
      Tells the delegate when the user taps a card.
-     - parameter verticalCardSwiperView: The `VerticalCardSwiperView` that displays the cardcells.
+     - parameter stackCardView: The `StackCardView` that displays the cardcells.
      - parameter index: The index of the CardCell that was tapped.
      */
-    @objc optional func didTapCard(verticalCardSwiperView: VerticalCardSwiperView, index: Int)
+    @objc optional func didTapCard(stackCardView: StackCardView, index: Int)
 
     /**
      Tells the delegate when the user holds a card.
-     - parameter verticalCardSwiperView: The `VerticalCardSwiperView` that displays the cardcells.
+     - parameter stackCardView: The `StackCardView` that displays the cardcells.
      - parameter index: The index of the CardCell that was tapped.
      - parameter state: The state of the long press gesture.
      */
-    @objc optional func didHoldCard(verticalCardSwiperView: VerticalCardSwiperView, index: Int, state: UITapGestureRecognizer.State)
+    @objc optional func didHoldCard(stackCardView: StackCardView, index: Int, state: UITapGestureRecognizer.State)
 
     /**
      Tells the delegate when the user scrolls through the cards.
-     - parameter verticalCardSwiperView: The `VerticalCardSwiperView` that displays the cardcells.
+     - parameter stackCardView: The `StackCardView` that displays the cardcells.
      */
-    @objc optional func didScroll(verticalCardSwiperView: VerticalCardSwiperView)
+    @objc optional func didScroll(stackCardView: StackCardView)
     /**
      Tells the delegate when scrolling through the cards came to an end.
-      - parameter verticalCardSwiperView: The `VerticalCardSwiperView` that displays the cardcells.
+      - parameter stackCardView: The `StackCardView` that displays the cardcells.
      */
-    @objc optional func didEndScroll(verticalCardSwiperView: VerticalCardSwiperView)
+    @objc optional func didEndScroll(stackCardView: StackCardView)
 
     /**
      Allows you to return the size as a CGSize for each card at their specified index.
@@ -74,9 +74,9 @@ import UIKit
      
      This function will also take the custom insets into account, in case (itemSize - insets) is negative,
      it will not take the insets into account.
-     - parameter verticalCardSwiperView: The `VerticalCardSwiperView` that will display the `CardCell`.
+     - parameter stackCardView: The `StackCardView` that will display the `CardCell`.
      - parameter index: The index for which we return the specific CGSize.
      - returns: The size of each card for its respective index as a CGSize.
      */
-    @objc optional func sizeForItem(verticalCardSwiperView: VerticalCardSwiperView, index: Int) -> CGSize
+    @objc optional func sizeForItem(stackCardView: StackCardView, index: Int) -> CGSize
 }
